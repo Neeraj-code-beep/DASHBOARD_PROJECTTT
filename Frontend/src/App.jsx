@@ -3,11 +3,13 @@ import Nav from './components/Nav';
 import Mainroutes from './routes/Mainroutes';
 import { useEffect } from 'react';
 import { asynccurrentuser } from './store/actions/userActions';
+import { asyncLoadProducts } from './store/actions/productAction';
 
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(asynccurrentuser());
+    dispatch(asyncLoadProducts());
   });
 
   return (

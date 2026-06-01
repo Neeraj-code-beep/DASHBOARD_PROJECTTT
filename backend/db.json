@@ -19,6 +19,20 @@
       "email": "anglenobida003@gmail.com",
       "password": "1234",
       "isAdmin": false
+    },
+    {
+      "id": "SC5hewVQjNS1a6369Iz8p",
+      "username": "neeraj",
+      "email": "neerajmishra757944@gmail.com",
+      "password": "1234",
+      "isAdmin": false
+    },
+    {
+      "id": "RkpYD22UsEJjHNr8vNcg3",
+      "username": "neeraj",
+      "email": "neerajmishra757944@gmail.com",
+      "password": "1234",
+      "isAdmin": false
     }
   ],
   "products": [

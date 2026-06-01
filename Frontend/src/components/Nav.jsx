@@ -7,7 +7,7 @@ const Nav = () => {
   return (
     <div className="flex gap-5 justify-center items-center ">
       <NavLink className={(e) => (e.isActive ? 'bg-purple-500' : ' ')} to="/">
-        Home{' '}
+        Home
       </NavLink>
 
       <NavLink
@@ -24,12 +24,24 @@ const Nav = () => {
           >
             Create Product
           </NavLink>
+          <NavLink
+            className={(e) => (e.isActive ? 'bg-purple-500' : ' ')}
+            to="/admin/update-product"
+          >
+            Update Product
+          </NavLink>
+          <NavLink
+            className={(e) => (e.isActive ? 'bg-purple-500' : ' ')}
+            to="/admin/delete-product"
+          >
+            Delete Product
+          </NavLink>
         </>
       ) : (
         <>
           <NavLink
             className={(e) =>
-              e.isActive ? 'bg-purple-500 rounded-md p-0.5 mt-0.5' : ' '
+              e.isActive ? 'bg-purp-le-500 rounded-md p-0.5 mt-0.5' : ' '
             }
             to="/login"
           >
