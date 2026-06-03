@@ -1,7 +1,7 @@
 import axios from '../../api/Axiosconfig';
 import { loadproduct } from '../reducers/productSlice';
 
-export const asyncLoadProducts = () => async (dispatch, getState) => {
+export const asyncLoadProducts = () => async (dispatch) => {
   try {
     const { data } = await axios.get('/products');
     dispatch(loadproduct(data));
@@ -10,9 +10,9 @@ export const asyncLoadProducts = () => async (dispatch, getState) => {
   }
 };
 
-export const asyncCreateProduct = (user) => async (dispatch, getState) => {
+export const asyncCreateProduct = (product) => async (dispatch) => {
   try {
-    await axios.post('/products');
+    await axios.post('/products', product);
     dispatch(asyncLoadProducts());
   } catch (error) {
     console.log(error);

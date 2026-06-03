@@ -43,6 +43,20 @@
       "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
       "category": "men's clothing",
       "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png"
+    },
+    {
+      "id": "xnAuxRM4JpvVoDqp5HUy5",
+      "title": "burger",
+      "price": "2",
+      "description": "burger is too tasty",
+      "category": "food"
+    },
+    {
+      "id": "SzqaHm-JCa29WZrvvY4_c",
+      "title": "aam ",
+      "price": "3",
+      "description": "its so yummy",
+      "category": "fruit"
     }
   ],
   "cart": []

@@ -8,8 +8,8 @@ import { asyncLoadProducts } from './store/actions/productAction';
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(asynccurrentuser());
     dispatch(asyncLoadProducts());
+    dispatch(asynccurrentuser());
   });
 
   return (

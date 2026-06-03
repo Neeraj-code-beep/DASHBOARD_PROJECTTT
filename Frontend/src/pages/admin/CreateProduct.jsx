@@ -2,7 +2,7 @@ import { nanoid } from 'nanoid';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-import { asyncLoadProducts } from '../../store/actions/productAction';
+import { asyncCreateProduct } from '../../store/actions/productAction';
 
 const CreateProduct = () => {
   const { register, handleSubmit } = useForm();
@@ -12,7 +12,7 @@ const CreateProduct = () => {
     product.id = nanoid();
     console.log(product);
     // dispatch(asyncregisteruser(product));
-    dispatch(asyncLoadProducts(product));
+    dispatch(asyncCreateProduct(product));
     navigate('/products');
   };
 

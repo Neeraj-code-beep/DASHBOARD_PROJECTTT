@@ -5,7 +5,7 @@ const Nav = () => {
   const user = useSelector((state) => state.userReducer.users);
   console.log(user);
   return (
-    <div className="flex gap-5 justify-center items-center ">
+    <div className="flex gap-5 justify-center items-center text-cyan-300 font-extralight text-md">
       <NavLink className={(e) => (e.isActive ? 'bg-purple-500' : ' ')} to="/">
         Home
       </NavLink>
